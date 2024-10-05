@@ -1,8 +1,8 @@
 import os
 import discord
 import my_bot
+from secrets import *
 client = discord.Client(intents=discord.Intents.all())
-my_secret = os.environ['DISCORD_BOT_SECRET']
 @client.event
 async def on_ready():
     print("I'm in")
